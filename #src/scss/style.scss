@@ -1,0 +1,109 @@
+@import "mixins";
+@import "fonts";
+@import "forms";
+
+/*Обнуляющий стиль*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+/*Списки*/
+ol li,
+ul li {
+	list-style: none;
+}
+/*Сылки*/
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+/*Заголовки*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/*Картинки*/
+img {
+	vertical-align: top;
+	pointer-events: none;
+}
+/*Шрифт*/
+html,
+body {
+	height: 100%;
+	font-size: 14px;
+	line-height: 1;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+/*form*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+/*--------------------------*/
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	font-family: Heebo;
+	font-weight: normal;
+	color: #21243D;
+}
+._container-home {
+	max-width: 856px;
+	margin: 0px auto;
+	@media (max-width: 925px) {
+		max-width: 750px;
+	}
+	@media (max-width: 767px) {
+		max-width: none;
+		padding: 0px 15px;
+	}
+}
+._container {
+	max-width: 917px - 235px;
+	margin: 0px auto;
+	@media (max-width: 712px) {
+		max-width: none;
+		padding: 0px 15px;
+	}
+}
+._ibg {
+	position: relative;
+	img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+.page{
+	flex: 1 1 auto;
+}
+@import "header";
+@import "home";
+@import "footer";
+/*--------------------------*/

@@ -1,0 +1,32 @@
+.footer {
+	&__container {
+		margin: 0px auto 55px;
+	}
+	&__icons {
+		display: flex;
+		column-gap: 35px;
+		justify-content: center;
+		margin-bottom: 25px;
+	}
+	&__img {
+		width: 35px;
+		height: 35px;
+		&:hover {
+			img {
+				transform: scale(1.1);
+				width: 32px;
+				height: 32px;
+			}
+		}
+		& img {
+			width: 30px;
+			height: 30px;
+			transition: 0.3s;
+		}
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+	}
+}

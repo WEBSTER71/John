@@ -1,0 +1,14 @@
+.red-button {
+	padding: 15px 20px;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 20px;
+	background: #FF6464;
+	color: #FFFFFF;
+	border: 2px solid #FF6464;
+	transition: 0.3s;
+	&:hover{
+		background: #FFFFFF;
+		color: #FF6464;
+	}
+}
